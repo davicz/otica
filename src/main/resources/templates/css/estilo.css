@@ -1,0 +1,129 @@
+estilo.css
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper{
+    width: 400px;
+    color: #f5f6f7;
+    background: #a560d693;
+    border-radius: 10px;
+     box-shadow: 0 0 20px rgba(0, 0, 0, 0.767);
+    padding: 30px 40px;
+}
+
+.wrapper h1{
+    font-size: 50px;
+    text-align: center;
+}
+.wrapper .input_box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input_box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid #f5f6f7;
+    border-radius: 40px;
+    padding: 20px 45px 20px 20px;
+    color: #f5f6f7;
+}
+
+.input_box input::placeholder{
+    color: #f5f6f7;
+}
+
+.input_box i{
+    position: absolute;
+    right: 20px;
+    color: #f5f6f7;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: #f5f6f7;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    font-size: 16px;
+    color: #07396a;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover{
+    color: #f5f6f7;
+    background: #07396a;
+    box-shadow: 0 0 10px #f5f6f7;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 32px;
+    color: #f5f6f7;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    margin-left: 40px;
+    text-decoration: none;
+    color: #f5f6f7;
+    font-weight: 400;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    color: #f5f6f7;
+    background: #f5f6f7;
+    transition: .3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
